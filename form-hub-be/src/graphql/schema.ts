@@ -7,6 +7,10 @@ const schema = `#graphql
         submissions: [Submission!]!
     }
 
+    type Mutation {
+        queueSubmissionGeneration: Boolean!
+    }
+
     type Submission {
         id: ID!
         submittedAt: DateTime!
